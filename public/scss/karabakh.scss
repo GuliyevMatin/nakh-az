@@ -1,0 +1,245 @@
+#karabakh {
+    margin-top: 50px;
+  .karabakh-img {
+    display: inline-block;
+    padding-left: 120px;
+  }
+  .karabakh-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 360px;
+    background-image: url(../images/qarabagBack.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .karabakh-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      .card {
+        background: rgba(100, 162, 173, 0.7);
+        transition: all 0.5s;
+        
+        cursor: pointer;
+        // width: 300px;
+        .card-body {
+          .card-title {
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 28px;
+            color: #501010;
+          }
+          .card-text {
+            font-family: "Roboto", sans-serif;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 16px;
+          }
+          .card-link {
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+        &:hover{
+            transform: scale(1.1);
+        }
+        &:not(:last-child){
+            margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width: 990px){
+    #karabakh {
+      .karabakh-img {
+        display: block;
+        padding-left: 0;
+        margin: 0 auto;
+      }
+      .karabakh-information {
+       
+        height: auto;
+        background-image: none;
+
+        .karabakh-row {
+        
+            flex-direction: column;
+          .card {
+            transition: all 0.5s;
+            width: 100%;
+            margin-bottom: 15px;
+            cursor: pointer;
+            // width: 300px;
+            .card-body {
+                
+              .card-title {
+                text-align: center;
+                font-family: "Roboto", sans-serif;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 28px;
+                color: #501010;
+              }
+              .card-text {
+                margin-bottom: 0;
+              }
+              .card-link {
+              }
+            }
+            &:hover{
+                transform: scale(1.1);
+            }
+            &:not(:last-child){
+                margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    
+}
+
+@media only screen and (min-width:576px) and (max-width: 768px){
+    #karabakh {
+      .karabakh-img {
+        display: block;
+        padding-left: 0;
+        margin: 0 auto;
+      }
+      .karabakh-information {
+       
+        height: auto;
+        background-image: none;
+
+        .karabakh-row {
+        
+            flex-direction: column;
+          .card {
+            transition: all 0.5s;
+            width: 100%;
+            margin-bottom: 15px;
+            cursor: pointer;
+            // width: 300px;
+            .card-body {
+                
+              .card-title {
+                font-size: 22px;
+              }
+              .card-text {
+                margin-bottom: 0;
+                font-size: 14px;
+              }
+              .card-link {
+              }
+            }
+            &:hover{
+                transform: scale(1.1);
+            }
+            &:not(:last-child){
+                margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    
+}
+
+@media only screen and (min-width:450px) and (max-width: 576px){
+    #karabakh {
+      .karabakh-img {
+        display: block;
+        padding-left: 0;
+        margin: 0 auto;
+      }
+      .karabakh-information {
+       
+        height: auto;
+        background-image: none;
+
+        .karabakh-row {
+        
+            flex-direction: column;
+          .card {
+            transition: all 0.5s;
+            width: 100%;
+            margin-bottom: 15px;
+            cursor: pointer;
+            // width: 300px;
+            .card-body {
+                
+              .card-title {
+                font-size: 18px;
+              }
+              .card-text {
+                margin-bottom: 0;
+                font-size: 13px;
+              }
+              .card-link {
+              }
+            }
+            &:hover{
+                transform: scale(1.1);
+            }
+            &:not(:last-child){
+                margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    
+}
+
+@media only screen and (min-width:320px) and (max-width: 450px){
+    #karabakh {
+      .karabakh-img {
+        width: 180px;
+        display: block;
+        padding-left: 0;
+        margin: 0 auto;
+      }
+      .karabakh-information {
+       
+        height: auto;
+        background-image: none;
+
+        .karabakh-row {
+        
+            flex-direction: column;
+          .card {
+            transition: all 0.5s;
+            width: 100%;
+            margin-bottom: 15px;
+            cursor: pointer;
+            // width: 300px;
+            .card-body {
+                
+              .card-title {
+                font-size: 18px;
+              }
+              .card-text {
+                margin-bottom: 0;
+                font-size: 13px;
+              }
+              .card-link {
+              }
+            }
+            &:hover{
+                transform: none;
+            }
+            &:not(:last-child){
+                margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    
+}

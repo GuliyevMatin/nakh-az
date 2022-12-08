@@ -1,0 +1,321 @@
+#republic-information {
+    margin-top: 194px;
+
+    .rebuplic-title {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 36px;
+        line-height: 41px;
+        color: #075171;
+        text-align: center;
+        margin-bottom: 90px;
+    }
+
+    .nav-tabs {
+        border-width: 0;
+    }
+
+    .nav-link {
+        background-image: url(../images/dot.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 8px;
+        height: 8px;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        color: #928B8B;
+        white-space: nowrap;
+        position: relative;
+
+        span {
+            position: absolute;
+            top: -50px;
+            transform: translateX(-40%);
+        }
+    }
+
+    .nav-link.active {
+        background-color: transparent;
+        border: none;
+        background-image: url(../images/selected-dot.svg);
+        width: 16px;
+        height: 16px;
+        font-size: 24x;
+        line-height: 27.6px;
+        color: #075171;
+    }
+
+    .line-section {
+        background-image: url(../images/line.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 70%;
+        margin: auto;
+        height: 3px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 64px;
+    }
+
+    .tab-img-section {
+        padding-right: 60px;
+
+        .tab-images {
+            position: relative;
+            height: 470px;
+
+            .tab-img {
+                width: 80%;
+                height: 404px;
+                display: block;
+                object-fit: cover;
+                position: absolute;
+                transition: .3s all ease-in-out;
+
+                &:hover {
+                    transform: scale(1.03);
+                    box-shadow: 10px 4px 4px 0 rgba(7, 81, 113, .4);
+                }
+            }
+
+            a {
+                &:focus {
+                    img {
+                        z-index: 4;
+                    }
+                }
+            }
+
+            .first-img {
+                box-shadow: 10px 4px 4px 0 rgba(7, 81, 113, 0.24);
+                z-index: 3;
+                right: 0;
+                top: 0;
+            }
+
+            .second-img {
+                box-shadow: 10px 10px 4px 0 rgba(7, 81, 113, 0.3);
+                z-index: 2;
+                right: 60px;
+                top: 58px;
+            }
+
+            .third-img {
+                box-shadow: 10px 10px 4px 0 rgba(7, 81, 113, 0.3);
+                z-index: 1;
+                right: 124px;
+                top: 26px;
+            }
+        }
+    }
+
+
+    .tab-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        line-height: 23px;
+        color: rgba(136, 132, 132, 1);
+    }
+}
+
+@media only screen and (max-width: 1230px) {
+    #republic-information {
+        .tab-img-section {
+            padding-right: 40px;
+
+            .tab-images {
+                height: 400px;
+
+                .tab-img {
+                    width: 60%;
+                    height: 340px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #republic-information {
+        .tab-img-section {
+
+            .tab-images {
+                .tab-img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    #republic-information {
+
+        .tab-img-section {
+            padding-right: 20px;
+
+            .tab-images {
+                height: 360px;
+
+                .tab-img {
+                    width: 70%;
+                    height: 300px;
+                }
+            }
+        }
+
+        .tab-text {
+            font-size: 18px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    #republic-information {
+        margin-top: 50px;
+
+        .rebuplic-title {
+            font-size: 28px;
+        }
+
+        .nav-link {
+            font-size: 18px;
+        }
+
+        .nav-link.active {
+            font-size: 20px;
+        }
+
+        .tab-img-section {
+            .tab-images {
+                height: 280px;
+
+                .tab-img {
+                    height: 220px;
+                }
+            }
+        }
+
+
+        .tab-text {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #republic-information {
+
+        .rebuplic-title {
+            font-size: 22px;
+            margin-bottom: 50px;
+        }
+
+        .nav-link {
+            font-size: 16px;
+
+                span {
+                    top: -30px;
+                }
+        }
+
+        .nav-link.active {
+            font-size: 17px;
+        }
+
+        .line-section {
+            margin-bottom: 30px;
+        }
+
+        .tab-img-section {
+            padding-right: 40px;
+            margin-bottom: 20px;
+
+            .tab-images {
+                height: 360px;
+
+
+                .tab-img {
+                    height: 300px;
+                }
+            }
+        }
+
+
+        .tab-text {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #republic-information {
+        .tab-img-section {
+
+            .tab-images {
+                height: 320px;
+
+
+                .tab-img {
+                    height: 260px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #republic-information {
+
+        .rebuplic-title {
+            font-size: 20px;
+        }
+
+        .nav-link {
+            font-size: 12px;
+
+                span {
+                    top: -30px;
+                }
+        }
+
+        .nav-link.active {
+            font-size: 14px;
+        }
+
+        .tab-img-section {
+            padding-right: 20px;
+
+            .tab-images {
+                height: 180px;
+
+
+                .tab-img {
+                    width: 50%;
+                    height: 120px;
+                }
+
+            }
+        }
+
+
+        .tab-text {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}

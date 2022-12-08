@@ -1,0 +1,38 @@
+// @import '/libs/mdb-ui-kit/css/mdb.min.css';
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import "./header/header.scss";
+@import "./header/navbar.scss";
+@import "./header/progress.scss";
+// @import "./necessary-information/necessary.scss";
+// @import "./republic-information.scss";
+// @import "./news.scss";
+// @import "./karabakh.scss";
+// @import "./usefull-links.scss";
+// @import "./photos.scss";
+// @import "./copyright.scss";
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #075171;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+a {
+  text-decoration: none;
+}
+

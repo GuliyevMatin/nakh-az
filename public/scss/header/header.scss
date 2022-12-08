@@ -1,0 +1,133 @@
+header {
+  width: 100%;
+  height: 440px;
+  position: relative;
+  background-image: url(../images/headerBack.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .header-title {
+      margin-bottom: 20px;
+      h3 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-size: 36px;
+        color: #fff;
+      }
+      margin-top: 53px;
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      .header-language {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .header-date {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-family: "Roboto";
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #501010;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  header {
+    .header {
+      .header-title {
+        h3 {
+          font-size: 24px;
+        }
+
+        .header-language {
+        }
+      }
+    }
+    .header-date {
+      font-size: 18px;
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  header {
+    .header {
+      .header-title {
+        margin-bottom: 20px;
+        h3 {
+          font-size: 18px;
+        }
+
+        .header-language {
+        }
+      }
+    }
+    .header-date {
+      font-size: 16px;
+    }
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 576px) {
+  header {
+    .header {
+      .header-title {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px;
+        h3 {
+          font-size: 18px;
+        }
+
+        .header-language {
+        }
+      }
+    }
+    .header-date {
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 450px) {
+  header {
+    height: 380px;
+    .header {
+      .header-title {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+        h3 {
+          font-size: 16px;
+        }
+
+        .header-language {
+        }
+      }
+    }
+    .header-date {
+      position: absolute;
+      top: 0;
+      right: 50%;
+      transform: translate(50%);
+      height: 20px;
+      font-size: 12px;
+    }
+  }
+}
